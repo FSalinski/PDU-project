@@ -1,3 +1,5 @@
+library(dplyr)
+
 # Setting working directory to current file
 dir_path <- dirname(rstudioapi::getActiveDocumentContext()$path)
 setwd(dir_path)
@@ -17,3 +19,6 @@ head(airports)
 head(data_1987)
 
 head(data_2001)
+
+airports %>%
+  filter(city == 'New York')
