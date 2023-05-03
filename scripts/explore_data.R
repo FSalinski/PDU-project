@@ -9,6 +9,9 @@ data_2001 <- read.csv("../data/2001.csv.bz2")
 airports <- read.csv("../data/airports.csv")
 carriers <- read.csv("../data/carriers.csv")
 plane_data <- read.csv("../data/plane-data.csv")
+variable_descriptions <- read.csv("../data/variable-descriptions.csv")
+
+variable_descriptions
 
 head(plane_data, 100)
 
