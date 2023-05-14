@@ -25,3 +25,7 @@ head(data_2001)
 
 airports %>%
   filter(city == 'New York')
+
+data_1987 %>%
+  filter(~is.na(WeatherDelay)) %>%
+  head(10)
